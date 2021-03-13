@@ -1,13 +1,13 @@
 {
   "name": "emberx-input",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Super basic data-down-actions-up input component!",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/pzuraq/emberx-input",
   "license": "MIT",
-  "author": "",
+  "author": "Chris Hewell Garrett <me@pzuraq.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
