@@ -1,0 +1,11 @@
+<input
+  value={{@value}}
+  checked={{@checked}}
+  ...attributes
+
+  {{on "change" (if @onChange (handle-input-event @onChange) (noop))}}
+  {{on "input" (if @onInput (handle-input-event @onInput) (noop))}}
+  {{on "keypress" (if @onKeyPress (handle-input-event @onKeyPress) (noop))}}
+  {{on "keydown" (if @onKeyDown (handle-input-event @onKeyDown) (noop))}}
+  {{on "keyup" (if @onKeyUp (handle-input-event @onKeyUp) (noop))}}
+>
