@@ -1,17 +1,19 @@
 emberx-input
 ==============================================================================
 
-Super basic data-down-actions-up input component!
+Super basic data-down-actions-up input and textarea components! Example usage
+with `ember-set-helper` for updating state.
 
 ```hbs
-<XInput value={{this.value}} @onChange={{set this "value}} />
+<XInput value={{this.value}} @onChange={{set this "value"}} />
+<XTextarea value={{this.value}} @onChange={{set this "value"}} />
 ```
 
-In general, all input attributes can be passed as attrs. `@value` and `@checked`
-are also supported as alternatives to `value` and `checked`, but either can be
-used.
+In general, all input/textarea attributes can be passed as attrs. `@value` and
+`@checked` are also supported as alternatives to `value` and `checked`, but
+either can be used.
 
-It provides the following events as arguments:
+Both components can be passed the following events as arguments:
 
 - `@onChange`
 - `@onInput`
@@ -20,7 +22,7 @@ It provides the following events as arguments:
 - `@onKeyUp`
 
 Each of these maps to the native event directly, but also captures the _value_
-of the input and passes it as the first argument to the event handler.
+of the input/textarea and passes it as the first argument to the event handler.
 
 ```js
 handleInput = (value, event) => {
